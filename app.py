@@ -33,7 +33,6 @@ def get_all_tasks_list():
 @cross_origin()
 def add_new_task():
     request_data = request.get_json()
-    # print(request_data)
     if (add_task(request_data)):
         return request_data, 200
     else:
